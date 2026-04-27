@@ -30,7 +30,7 @@ jobs:
           USERNAME_AND_PASSWORD: ${{ secrets.USERNAME_AND_PASSWORD }}
         run: node scripts/login.js
 
-       - name: 保活提交（不修改 workflow）
+      - name: 保活提交（不修改 workflow）
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: |
